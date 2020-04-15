@@ -1,1 +1,16 @@
 // Mixins in here
+
+.border (@px:1px, @sty:solid, @col:black) {
+    border: @px @sty @col;
+}
+
+.borderStyle (@top, @right, @bottom, @left) {
+    border-style: @top @right @bottom @left;
+}
+
+.mobile (){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //align-items: center;
+}
